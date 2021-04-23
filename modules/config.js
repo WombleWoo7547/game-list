@@ -1,0 +1,26 @@
+export default {
+  list: [
+    'Diamant',
+    'Genius Square',
+    'Forbidden Island',
+    'Little Town',
+    'KingDomino',
+    'Ticket to ride!',
+    'Quacks of Queddlingburg',
+		'Carcassonne',
+		'Mercado',
+		'Tribes',
+		'Tiny Towns',
+		'Harry Potter',
+		'Takenoko',
+		'Small World',
+		'Forbidden Sky',
+		'Pandemic',
+		'Catan',
+  ],
+  welcomeMsgs: [
+    'Hello, gamers!',
+    'Oooh! Game time!',
+    'What to play. What to play. What to play!',
+  ],
+};

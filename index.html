@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>what-to-play.com</title>
+    <script
+      src='https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js'
+      defer
+    ></script>
+    <script src='app.js' type='module' defer></script>
+    <link rel='stylesheet' href='css/styles.css' />
+  </head>
+  <body>
+    <header>
+      <h1>what-to-play.com</h1>
+    </header>
+    <main id='app'>
+      <h3>{{msgPick}}</h3>
+      <div class='list'>
+        <h4>List:</h4>
+        <div v-for='game in list'>
+          <p>{{game}}</p>
+        </div>
+      </div>
+      <div class='random'>
+        <button @click='showRandom' class="button">Show random game! <small>(Refresh for a new one...)</small></button>
+				<p id='pick' class='hidden'>{{gamePick}}</p>
+      </div>
+    </main>
+  </body>
+</html>
